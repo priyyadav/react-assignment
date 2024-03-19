@@ -1,21 +1,20 @@
 import PropTypes from "prop-types";
 import { UserCircle } from "@phosphor-icons/react";
-import { useTheme } from '@storybook/theming';
 
 function Button({ label, backgroundColor, size, displayType, type, status, handleClick }) {
   const scale = size === "small" ? 0.75 : size === "xs" ? 0.55 : 1; 
-  const theme = useTheme();
+
 
   let backgroundColorStyle;
   switch (status) {
     case "hover":
-      backgroundColorStyle = type === "default" ? "#EDFAED" :type === "neutral" ? "#F2F3F5": theme.hover;
+      backgroundColorStyle = type === "default" ? "#EDFAED" :type === "neutral" ? "#F2F3F5": "#282829";
       break;
     case "disable":
-      backgroundColorStyle = type === "default" ? "#EDFAED" : type === "neutral" ? "#F2F3F5":theme.disable;
+      backgroundColorStyle = type === "default" ? "#EDFAED" : type === "neutral" ? "#F2F3F5":"#282829";
       break;
     default:
-      backgroundColorStyle = type === "default" ? "transparent" :type === "neutral" ? "transparent ":theme.backgroundcolor;
+      backgroundColorStyle = type === "default" ? "transparent" :type === "neutral" ? "transparent ":"black";
       break;
   }
 
