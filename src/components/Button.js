@@ -1,9 +1,8 @@
 import PropTypes from "prop-types";
 import { UserCircle } from "@phosphor-icons/react";
 
-function Button({ label, backgroundColor, size, displayType, type, status, handleClick }) {
+function Button({ label, size, displayType, type, status, handleClick }) {
   const scale = size === "small" ? 0.75 : size === "xs" ? 0.55 : 1; 
-
 
   let backgroundColorStyle;
   switch (status) {
@@ -48,21 +47,13 @@ function Button({ label, backgroundColor, size, displayType, type, status, handl
 }
 
 Button.propTypes = {
-  label: PropTypes.string.isRequired,
-  backgroundColor: PropTypes.string,
+  label: PropTypes.string,
   size: PropTypes.oneOf(["default", "small", "xs"]), 
   displayType: PropTypes.oneOf(["text-only", "icon-with-text", "icon-only"]),
   type: PropTypes.oneOf(["default", "neutral", "reverse"]),
   status: PropTypes.oneOf(["default", "hover", "disable"]),
-  handleClick: PropTypes.func.isRequired,
+  handleClick: PropTypes.func,
 };
 
-Button.defaultProps = {
-  backgroundColor: "red",
-  size: "default",
-  displayType: "text-only",
-  type: "default",
-  status: "default",
-};
 
 export default Button;
