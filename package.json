@@ -30,6 +30,7 @@
       "plugin:storybook/recommended"
     ]
   },
+  
   "browserslist": {
     "production": [
       ">0.2%",
