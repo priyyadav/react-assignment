@@ -28,6 +28,7 @@
       "react-app/jest",
       "plugin:storybook/recommended"
     ]
+    
   },
   "browserslist": {
     "production": [
