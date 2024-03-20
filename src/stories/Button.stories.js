@@ -1,14 +1,14 @@
-import Button from "../components/Button";
+import ActionButton from "../components/ActionButton";
 
 export default {
-  title: "Components/Button",
-  component: Button,
+  title: "Components/ActionButton",
+  component: ActionButton,
   argTypes: {
     handleClick: { action: "handleClick" }  
   }
 }
 
-const Template = args => <Button {...args} />;
+const Template = args => <ActionButton {...args} />;
 
 export const Overview = Template.bind({});
 Overview.args = {

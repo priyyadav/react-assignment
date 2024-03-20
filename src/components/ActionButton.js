@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { UserCircle } from "@phosphor-icons/react";
 
-function Button({ label, size, displayType, type, status, handleClick }) {
+function ActionButton({ label, size, displayType, type, status, handleClick }) {
   const scale = size === "small" ? 0.75 : size === "xs" ? 0.55 : 1; 
 
   let backgroundColorStyle;
@@ -46,7 +46,7 @@ function Button({ label, size, displayType, type, status, handleClick }) {
   );
 }
 
-Button.propTypes = {
+ActionButton.propTypes = {
   label: PropTypes.string,
   size: PropTypes.oneOf(["default", "small", "xs"]), 
   displayType: PropTypes.oneOf(["text-only", "icon-with-text", "icon-only"]),
@@ -56,4 +56,4 @@ Button.propTypes = {
 };
 
 
-export default Button;
+export default ActionButton;
