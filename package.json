@@ -16,12 +16,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build", 
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "vite-build": "vite build"
+    "build-storybook": "storybook build -o build-storybook" 
   },
   "eslintConfig": {
     "extends": [
@@ -30,7 +29,6 @@
       "plugin:storybook/recommended"
     ]
   },
-  
   "browserslist": {
     "production": [
       ">0.2%",
