@@ -10,7 +10,14 @@
 
 ## run the command
     
-    2. `npm run storybook`
+    1. `npm run storybook`
+
+## open on server
+     
+     1.`http://localhost:6006/ `
+     2. `http://192.168.0.109:6006/ `
+     
+     
 
 
 
