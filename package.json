@@ -20,7 +20,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "vite-build": "vite build"
   },
   "eslintConfig": {
     "extends": [
@@ -59,6 +60,7 @@
     "phosphor-react": "^1.4.1",
     "prop-types": "^15.8.1",
     "storybook": "^8.0.2",
+    "vite": "^5.1.6",
     "webpack": "^5.90.3"
   }
 }
